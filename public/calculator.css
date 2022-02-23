@@ -1,0 +1,386 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+.bannercalculator {
+    background: #5b46e9;
+    padding: 30px 65px ;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 253px;
+  }
+
+  .bannercalculator.bar {
+    position: relative;
+  }
+  
+  .bannercalculator h2 {
+    font-size: 29px;
+    line-height: 36px;
+    color: #fff;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .bannercalculator h2:after {
+    content: "";
+    border-top: 1px solid #d7df23;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
+
+  .bannercalculator .banner-calculator-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px  0;
+  }
+  
+  .bannercalculator .banner-calculator-box .calculator-details {
+    width: 33.3%;
+    padding: 0 8px;
+  }
+  
+  .bannercalculator .calculator-details {
+    margin-top: 20px;
+    margin-bottom: 0;
+    border: 0;
+  }
+  
+  .bannercalculator .calculator-details .calculator-details-top {
+    display: block;
+  }
+  
+  .bannercalculator .calculator-details .calculator-details-top h6 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .bannercalculator .calculator-details .calculator-heading-month {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .bannercalculator .calculator-details .calculator-textbox .btn-apply.btn-month {
+    width: 28px;
+    height: 24px;
+  }
+
+  .bannercalculator
+    .calculator-details
+    .calculator-textbox
+    .btn-apply.btn-month.btn-count {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .bannercalculator .calculator-details .calculator-textbox .text-group {
+    width: calc(100% - 28px);
+    padding: 0 5px;
+  }
+  
+  .bannercalculator
+    .calculator-details
+    .calculator-textbox
+    .text-group
+    .input-textbox {
+    font-size: 12px;
+
+    padding: 0 7px;
+    width: 100%;
+    height: 27px;
+  }
+    .bannercalculator
+    .calculator-details
+    .calculator-textbox
+    .text-group.prefix-symbol
+    span {
+
+    font-size: 12px;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+  }
+  .bannercalculator
+    .calculator-details
+    .calculator-textbox
+    .text-group.prefix-symbol
+    .input-textbox {
+    padding-right: 18px;
+  }
+  .bannercalculator
+    .calculator-details
+    .calculator-textbox
+    .text-group.prefix-symbol.left
+    .input-textbox {
+    padding-right: 7px;
+    padding-left: 20px;
+  }
+  .bannercalculator .calculator-details .calculator-details-bottom {
+    height: 0;
+    overflow: hidden;
+  }
+  .bannercalculator .emi-details {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    margin: 20px 0 15px;
+  }
+  .bannercalculator .emi-details .emi-details-list {
+    width: calc(100% - 114px);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+  .bannercalculator .emi-details .emi-details-list p {
+
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    margin: 0;
+  }
+  .bannercalculator .emi-details .emi-details-list span {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #333;
+  }
+  .bannercalculator .emi-details .emi-details-list span i {
+    font-size: 13px;    
+  }
+
+  .calculator-details .calculator-details-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .calculator-details .calculator-heading-month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 186px);
+    padding-right: 15px;
+  }
+  .calculator-details .calculator-textbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .calculator-details .calculator-textbox .btn-apply.btn-month.btn-count {
+    background-color: #d7df23;
+    border-radius: 4px;
+    border-color: #d7df23;
+    font-size: 14px;
+    line-height: 15px;
+    color: #005899;
+    margin: 0;
+    position: relative;
+  }
+  .calculator-details .btn-apply.btn-month {
+    padding: 5px 2px;
+    min-width: inherit;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 13px;
+    border: 1px solid #005899;
+    border-radius: 6px;
+    text-transform: capitalize;
+
+  }
+  .calculator-details .calculator-textbox .btn-apply.btn-month.btn-count i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .calculator-details .calculator-textbox .text-group.prefix-symbol {
+    position: relative;
+  }
+  .calculator-details .calculator-textbox .text-group .input-textbox {
+    border-bottom: 1px solid #c2c2c2;
+    background-color: #f3f3f3;
+    color: #4f4f4f;
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+    width: 110px;
+  }
+  .calculator-details .calculator-textbox .text-group.prefix-symbol span {
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    right: 13px;
+    top: 8px;
+  }
+  .calculator-details .line-center {
+    position: relative;
+  }
+
+  .calculator-details .line-center:before {
+    content: "";
+    height: 12px;
+    width: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    top: 37px;
+  }
+ 
+
+
+
+ 
+
+
+.bannercalculator .btn-apply {
+  height: auto;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #333;
+  padding: 0;
+  min-width: 114px;
+  border-radius: 0 4px 4px 0;
+  background-color: #d7df23;
+}
+
+
+
+.bannercalculator .btn-apply:focus,
+.bannercalculator .btn-apply:hover {
+  outline: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.bannercalculator .btn-apply.btn-yellow:hover {
+  background-color: #b6bd1d;
+}
+.bannercalculator .btn-apply.btn-yellow.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.bannercalculator .input-textbox {
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 0;
+  height: 33px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.7);
+  width: 100%;
+}
+
+/* // */
+
+.input-textbox:hover{
+  outline: none;
+  background: #000;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+
+
+@media (max-width: 1199px) {
+  .bannercalculator {
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 30px ;
+  }
+  .bannercalculator h2 {
+    font-size: 19px;
+    line-height: 32px;
+    padding:0 ;
+    padding-bottom: 5px;
+    
+  }
+
+  .bannercalculator h2:after {
+    left: 0;
+  }
+
+  .bannercalculator .banner-calculator-box {
+    margin: 5px -5px 0;
+  }
+ 
+  .bannercalculator .banner-calculator-box .calculator-details {
+    width: 100%;
+    padding: 0px;
+    margin-top: 15px; padding: 0 5px;
+  }
+  
+  .bannercalculator .calculator-details .calculator-details-top h6 {
+    font-size: 15px;
+  }
+  
+  .bannercalculator
+    .calculator-details
+    .calculator-textbox
+    .text-group
+    .input-textbox {
+    font-size: 17px;
+  }
+
+  .bannercalculator .emi-details {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    margin: 20px 0 15px;
+    width: 100%;
+  }
+  .bannercalculator .emi-details .emi-details-list {
+    width:100%;
+    padding: 8px 10px;
+  }
+  .bannercalculator .emi-details .emi-details-list p {
+
+    font-size: 14px;
+    color: #333;
+    line-height: 14px;
+    margin: 0;
+  }
+  .bannercalculator .emi-details .emi-details-list span {
+    font-size: 14px;
+  }
+
+  .calculator-details .calculator-textbox .text-group .input-textbox {
+    width: 100%;
+  }
+
+}
+
+
+
+
